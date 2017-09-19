@@ -1,0 +1,49 @@
+{
+	"name": "datavalues",
+	"descriptionmsg": "datatypes-desc",
+	"license-name": "GPL-2.0+",
+	"author": [
+		"The Wikidata team"
+	],
+	"url": "https://phabricator.wikimedia.org/diffusion/EDTY/",
+	"load_composer_autoloader": true,
+	"ResourceFileModulePaths": {
+		"localBasePath": "js",
+		"remoteExtPath": "DataTypes/js"
+	},
+	"ResourceModules": {
+		"dataTypes.__namespace": {
+			"scripts": [
+				"dataTypes/__namespace.js"
+			]
+		},
+		"dataTypes.DataType": {
+			"scripts": "dataTypes/DataType.js",
+			"dependencies": "dataTypes.__namespace"
+		},
+		"dataTypes.DataTypeStore": {
+			"scripts": "dataTypes/DataTypeStore.js",
+			"dependencies": [
+				"dataTypes.__namespace",
+				"dataTypes.DataType"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"DataTypes": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"DataTypes\\DataTypesHooks": "src/DataTypesHooks.php",
+		"DataTypes\\DataType": "src/DataType.php",
+		"DataTypes\\DataTypeFactory": "src/DataTypeFactory.php",
+		"DataTypes\\Modules\\DataTypesModule": "src/Modules/DataTypesModule.php"
+	},
+	"Hooks": {
+		"UnitTestsList": [
+			"DataTypes\\DataTypesHooks::onUnitTestsList"
+		]
+	},
+	"manifest_version": 1
+}

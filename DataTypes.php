@@ -1,21 +1,22 @@
 <?php
 
 /**
- * Entry point for the DataTypes library.
+ * DataTypes extension
  *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
+ * @ingroup Extensions
+ *
+ * The license governing the extension code:
+ * @license GNU General Public Licence 2.0 or later
  */
 
-namespace DataTypes;
-
-if ( defined( 'DataTypes_VERSION' ) ) {
-	// Do not initialize more than once.
-	return 1;
-}
-
-define( 'DataTypes_VERSION', '1.1.0' );
-
-if ( defined( 'MEDIAWIKI' ) ) {
-	include __DIR__ . '/DataTypes.mw.php';
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'DataTypes', __DIR__ . '/extension.json' );
+	/* wfWarn(
+		'Deprecated PHP entry point used for DataTypes extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return true;
+} else {
+	die( 'This version of the DataTypes extension requires MediaWiki 1.25+' );
 }
