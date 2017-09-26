@@ -34,13 +34,13 @@
 			"DataTypes.php"
 		],
 		"psr-4": {
-			"DataTypes\\": "src/"
+			"DataTypes\\": "src/",
+			"DataTypes\\Tests\\": "tests/"
 		}
 	},
 	"scripts": {
 		"test": [
-			"phpcs -p -s",
-			"phpunit"
+			"phpcs -p -s"
 		]
 	}
 }

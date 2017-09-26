@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joachim Mos"
-        ]
-    },
-    "datatypes-type-boolean": "Boolean",
-    "datatypes-type-time": "Tied"
+	"@metadata": {
+		"authors": [
+			"Joachim Mos"
+		]
+	},
+	"datatypes-type-boolean": "Boolean",
+	"datatypes-type-time": "Tied"
 }
