@@ -51,7 +51,7 @@ for the [Wikidata project](https://wikidata.org/).
 
 ## Release notes
 
-### 2.0.0 (dev)
+### 2.0.0 (2017-11-14)
 * Removed `DataTypesModules`
 * Removed MediaWiki integration. The library is no longer a MediaWiki extension.
 * Removed JavaScript files and internationalizations (moved to a separate package).
