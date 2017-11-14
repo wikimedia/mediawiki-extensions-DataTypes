@@ -51,8 +51,10 @@ for the [Wikidata project](https://wikidata.org/).
 
 ## Release notes
 
-### 1.1.0 (dev)
-* Updated internationalizations.
+### 2.0.0 (dev)
+* Removed `DataTypesModules`
+* Removed MediaWiki integration. The library is no longer a MediaWiki extension.
+* Removed JavaScript files and internationalizations (moved to a separate package).
 
 ### 1.0.0 (2016-12-29)
 * `DataType` and `DataTypeFactory` do not accept empty strings any more.

@@ -1,4 +1,0 @@
-/**
- * @ignore
- */
-this.dataTypes = {};

@@ -2,9 +2,6 @@
 <ruleset name="DataValuesDataTypes">
 	<rule ref="./vendor/wikibase/wikibase-codesniffer/Wikibase" />
 
-	<rule ref="Generic.NamingConventions.UpperCaseConstantName">
-		<exclude-pattern>DataTypes\.php</exclude-pattern>
-	</rule>
-
+	<exclude-pattern>DataTypes.php</exclude-pattern>
 	<file>.</file>
 </ruleset>

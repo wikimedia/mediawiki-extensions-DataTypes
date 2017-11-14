@@ -12,18 +12,11 @@ php:
   - 7.1
   - hhvm
 
-matrix:
-  include:
-    - php: 5.5
-      env: JS_BUILD=true
-
 before_script:
   - composer install --prefer-source
-  - if [[ "$JS_BUILD" == true ]]; then npm install; fi
 
 script:
   - composer test
-  - if [[ "$JS_BUILD" == true ]]; then npm test; fi
 
 notifications:
   email:
