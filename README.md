@@ -1,3 +1,5 @@
+[READ-ONLY] This component has been integrated into [Wikibase](https://gerrit.wikimedia.org/r/#/admin/projects/mediawiki/extensions/Wikibase) extension.
+
 # DataTypes
 
 PHP library defining the `DataTypes\DataType` class of which instances represent a type of value,
